@@ -13,4 +13,7 @@ module com.example.imperia {
 
     opens com.example.imperia to javafx.fxml;
     exports com.example.imperia;
+    exports  com.example.map;
+    exports  com.example.utils;
+
 }

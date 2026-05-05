@@ -1,5 +1,6 @@
 package com.example.imperia;
 
+import com.example.map.TileMap;
 import javafx.scene.Scene;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.KeyCode;
@@ -12,6 +13,9 @@ public class GameCommand {
 
     private final GraphicsContext gc;
     private final Scene scene;
+    private static final double MAP_OFFSET_X = 5;
+    private static final double MAP_OFFSET_Y = 5;
+    private TileMap tileMap;
 
     private  GameState state = GameState.MAIN_MENU;
 
