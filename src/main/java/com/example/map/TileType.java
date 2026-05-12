@@ -1,6 +1,5 @@
 package com.example.map;
 
-
 /**
  * Tutti i tipi di tile possibili sulla mappa 64x64.
  *
@@ -16,7 +15,6 @@ package com.example.map;
  */
 public enum TileType {
 
-
     // --- Terreno base ---
     GRASS,          // erba piatta — EDIFICABILE
     PATH,           // sentiero di terra — percorso nemici
@@ -24,11 +22,9 @@ public enum TileType {
     ELEVATED,       // terreno rialzato — decorativo
     STAIRS,         // scale tra livelli
 
-
     // --- Risorse (spawn casuale sulle GRASS tiles) ---
     RESOURCE_GOLD,  // deposito d'oro — Pawn lo raccoglie
     RESOURCE_WOOD,  // albero da tagliare — Pawn lo taglia
-
 
     // --- Speciali ---
     CASTLE,         // posizione del castello (angolo in basso a destra)

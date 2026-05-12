@@ -13,7 +13,7 @@ public class GameWindow {
     private final Canvas         canvas;
     private final GraphicsContext gc;
     private final GameLoop       gameLoop;
-    private final GameCommand    gameManager;
+    private final GameManager    gameManager;
 
     public GameWindow(Stage stage) {
         this.stage = stage;
@@ -30,7 +30,7 @@ public class GameWindow {
         stage.setScene(scene);
         stage.setResizable(false);
 
-        gameManager = new GameCommand(gc, scene);
+        gameManager = new GameManager(gc, scene);
         gameLoop    = new GameLoop(gameManager);
     }
 
