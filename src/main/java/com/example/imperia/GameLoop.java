@@ -2,11 +2,7 @@ package com.example.imperia;
 
 import javafx.animation.AnimationTimer;
 
-/**
- * Game loop basato su AnimationTimer di JavaFX.
- * Calcola il delta time in secondi e lo passa al GameManager.
- * Target: ~60 FPS (JavaFX gestisce la sincronizzazione con il monitor).
- */
+
 public class GameLoop extends AnimationTimer {
 
     private static final double MAX_DELTA = 0.05; // cap a 50ms per evitare "spiral of death"

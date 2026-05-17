@@ -4,7 +4,6 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class GameWindow {
@@ -28,9 +27,10 @@ public class GameWindow {
 
         stage.setTitle(Main.TITLE);
         stage.setScene(scene);
-        stage.setResizable(false);
+        stage.setResizable(true);
+        stage.setMaximized(true);
 
-        gameManager = new GameManager(gc, scene);
+        gameManager = new GameManager(gc, scene, canvas);
         gameLoop    = new GameLoop(gameManager);
     }
 

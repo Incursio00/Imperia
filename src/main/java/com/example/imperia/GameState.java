@@ -1,7 +1,7 @@
 package com.example.imperia;
 
 /**
- * Stati possibili della macchina a stati del gioco.
+ * Stati
  */
 public enum GameState {
     MAIN_MENU,   // schermata iniziale

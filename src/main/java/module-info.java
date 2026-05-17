@@ -1,19 +1,5 @@
 module com.example.imperia {
     requires javafx.controls;
-    requires javafx.fxml;
-    requires javafx.web;
-
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
-
-    opens com.example.imperia to javafx.fxml;
+    requires javafx.graphics;
     exports com.example.imperia;
-    exports  com.example.map;
-    exports  com.example.utils;
-
 }
